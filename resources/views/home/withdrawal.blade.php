@@ -18,7 +18,7 @@
 	                                        <div class="col-md-5">
 												<div class="form-group label-floating">
 													<label class="control-label">Amount</label>
-													<input type="text" min="1" name="amount" maxlength="10" class="form-control" required>
+													<input type="text" name="amount" class="form-control" required>
 												</div>
 	                                        </div>
 	                                       

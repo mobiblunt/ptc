@@ -320,14 +320,14 @@
          $("#investment").change(function(){
               
 
-             rob = $("#pran").val();
-             robocharge = $("#charge").val();
+             //rob = $("#pran").val();
+             //robocharge = $("#charge").val();
              investment = $("#investment").val();  
-             subTotal   = (parseFloat(investment)*parseFloat(rob))/100;
+             //subTotal   = (parseFloat(investment)*parseFloat(rob))/100;
               
-             Total   = Number(investment) + Number(robocharge);
-             $("#profito").val(subTotal);
-             $("#total").val(Total);
+             //Total   = Number(investment) + Number(robocharge);
+             //$("#profito").val(subTotal);
+             $("#total").val(investment);
 
          })
          

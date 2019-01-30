@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Deposit extends Model
 {
     protected $fillable = [
-        'user_id', 'amount', 'plan_id', 'pay_option', 'status','trans_id','btc_amt','mobile','owing',
+        'user_id', 'amount', 'plan_id', 'pay_option', 'status','trans_id','btc_amt','mobile',
     ];
 
 

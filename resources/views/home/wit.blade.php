@@ -16,14 +16,12 @@
 						<p class="category"><span class="text-success"> Status:  </span> {{ $wit->status }}</p>
 						<p class="category"><span class="text-success"> Payment Option: {{ $wit->pay_option}}  </span> </p>
 						
-						<p class="category"><span class="text-success">Amount:  </span> {{ $wit->amount}}<i class="fa fa-bitcoin"></i></p>
+						<p class="category"><span class="text-success">Amount:  </span>$ {{ $wit->amount}}</p>
 
 						<p class="category"><span class="text-success">Address:  </span> {{ $wit->address}}</p>
 					</div>
 					<div class="card-footer">
-						<div class="stats">
-							<i class="material-icons">access_time</i> updated 4 minutes ago 
-						</div>
+						
 					</div>
 				</div>
 

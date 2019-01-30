@@ -35,7 +35,7 @@
               <p>
                 Within a few short years, Cryptvault has expanded enormously, with 200,000 registered customers globally executing more than two million trades a month.
 
-The company’s total trading volumes surpass $30 billion per month. Cryptvault’s user-oriented perspective, combined with solid financial backing, is unique in the field of online trading. From its 24-hour multilingual support desks to its broad range of platforms and services, Evergrowth has created the optimal trading environment for every level of trader. Cryptvault’s wide scope includes a full spectrum of trading instruments including Forex, stocks, commodities and indices..
+The company’s total trading volumes surpass $100 million per month. Cryptvault’s user-oriented perspective, combined with solid financial backing, is unique in the field of online trading. From its 24-hour multilingual support desks to its broad range of platforms and services, Cryptvault has created the optimal trading environment for every level of trader. Cryptvault’s wide scope includes a full spectrum of trading instruments including Forex, stocks, commodities and indices..
               </p>
             </div>
           </div>
@@ -63,14 +63,14 @@ The company’s total trading volumes surpass $30 billion per month. Cryptvault�
                   <div class="row row--md-between">
                     <div class="col col--sm-6 col--md-3">
                       <div class="__item">
-                        <span class="num js-count" data-from="0" data-to="20" data-decimals="1" data-before="$" data-after="M"></span><br>
+                        <span class="num js-count" data-from="0" data-to="500" data-decimals="1" data-before="$" data-after="M"></span><br>
                         The amount of finance in the system
                       </div>
                     </div>
 
                     <div class="col col--sm-6 col--md-3">
                       <div class="__item">
-                        <span class="num js-count" data-from="0" data-to="25" data-decimals="3"></span><br>
+                        <span class="num js-count" data-from="0" data-to="200" data-decimals="3"></span><br>
                         Active users
                       </div>
                     </div>
@@ -112,7 +112,7 @@ The company’s total trading volumes surpass $30 billion per month. Cryptvault�
                 </div>
 
                 <p class="col-MB-35">
-                  Cryptvault is a multi-national company with regional offices and sales centers in Paris, Dublin, Milan, Tokyo and Sydney. The company’s administrative headquarters are in California, USA.
+                  Cryptvault is a multi-national company with regional offices and sales centers in Paris, Dublin, Milan, Tokyo and Sydney. 
 
 Whether you are an experienced trader or a novice, Cryptvault’s adaptable trading platforms and services provide you with the right balance of simplicity and sophistication. 
 

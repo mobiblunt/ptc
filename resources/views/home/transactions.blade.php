@@ -27,7 +27,7 @@
 	                                    	@foreach($dep as $depi)
 	                                        <tr>
 	                                        	<td>{{$depi->trans_id}}</td>
-	                                        	<td>{{$depi->amount}} BTC</td>
+	                                        	<td> $ {{$depi->amount }}</td>
 	                                        	<td>{{$depi->created_at}}</td>
 	                                        	<td><button type="button" data-toggle="modal" data-target="#myModal">View</button></td>
 												<td><span class="badge badge-primary">{{$depi->status}}</span></td>
@@ -66,7 +66,7 @@
 	                                    	@foreach($wit as $wits)
 	                                        <tr>
 	                                        	<td>{{$wits->tran_id}}</td>
-	                                        	<td><b>{{$wits->amount}}</b> BTC</td>
+	                                        	<td>$ {{$wits->amount}}</td>
 	                                        	<td>{{$wits->created_at}}</td>
 	                                        	<td>{{$wits->address}}</td>
 												<td><span class="badge badge-primary">{{$wits->status}}</span></td>

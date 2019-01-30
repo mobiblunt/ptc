@@ -193,14 +193,14 @@
                                     <div class="row row--xs-middle">
                                         <div class="col col--sm-4 col--md-4">
                                             <div class="__item text--sm-left">
-                                                <span class="num js-count" data-from="0" data-to="40" data-decimals="1" data-before="$" data-after="M"></span><br>
+                                                <span class="num js-count" data-from="0" data-to="500" data-decimals="1" data-before="$" data-after="M"></span><br>
                                                 The amount of finance in the system
                                             </div>
                                         </div>
 
                                         <div class="col col--sm-4 col--md-3">
                                             <div class="__item text--sm-left">
-                                                <span class="num js-count" data-from="0" data-to="25" data-decimals="3"></span><br>
+                                                <span class="num js-count" data-from="0" data-to="200" data-decimals="3"></span><br>
                                                 Active users
                                             </div>
                                         </div>
@@ -364,7 +364,7 @@
                                     </p>
 
                                     <p>
-                                        <a class="custom-btn custom-btn--medium custom-btn--style-2" href="{{ route('auth.register.form') }}">Explore More</a>
+                                        <a class="custom-btn custom-btn--medium custom-btn--style-2" href="{{ route('auth.register.form') }} ">Explore More</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +402,7 @@
 
                                     <p> Make Instant withdrawals from your wallet.</p>
 
-                                    <p><a class="__more" href="#"><i class="fontello-right-1"></i></a></p>
+                                    <p><a class="__more" href="{{ route('auth.register.form') }}"><i class="fontello-right-1"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -420,7 +420,7 @@
 
                                     <p>Digital currency stored on our servers is covered by our insurance policy.</p>
 
-                                    <p><a class="__more" href="#"><i class="fontello-right-1"></i></a></p>
+                                    <p><a class="__more" href="{{ route('auth.register.form') }}"><i class="fontello-right-1"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -438,7 +438,7 @@
 
                                     <p>We store the vast majority of the digital assets in secure offline storage.</p>
 
-                                    <p><a class="__more" href="#"><i class="fontello-right-1"></i></a></p>
+                                    <p><a class="__more" href="{{ route('auth.register.form') }}"><i class="fontello-right-1"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -505,7 +505,7 @@ of trading tools. Our robots have been developed with the latest market and trad
 
                                         </ul>
 
-                                        <a class="custom-btn custom-btn--medium custom-btn--style-2 wide" href="#">Get Started</a>
+                                        <a class="custom-btn custom-btn--medium custom-btn--style-2 wide" href="{{ route('auth.register.form') }}">Get Started</a>
                                     </div>
                                 </div>
                                 <!-- end item -->
@@ -548,7 +548,7 @@ of trading tools. Our robots have been developed with the latest market and trad
                                         </ul>
 
 
-                                        <a class="custom-btn custom-btn--medium custom-btn--style-2 wide" href="#">Get Started</a>
+                                        <a class="custom-btn custom-btn--medium custom-btn--style-2 wide" href="{{ route('auth.register.form') }}">Get Started</a>
                                     </div>
                                 </div>
                                 <!-- end item -->
@@ -593,7 +593,7 @@ of trading tools. Our robots have been developed with the latest market and trad
                                         </ul>
 
 
-                                        <a class="custom-btn custom-btn--medium custom-btn--style-2 wide" href="#">Get Started</a>
+                                        <a class="custom-btn custom-btn--medium custom-btn--style-2 wide" href="{{ route('auth.register.form') }}">Get Started</a>
                                     </div>
                                 </div>
                                 <!-- end item -->
@@ -637,7 +637,7 @@ of trading tools. Our robots have been developed with the latest market and trad
                                         </ul>
 
 
-                                        <a class="custom-btn custom-btn--medium custom-btn--style-2 wide" href="#">Get Started</a>
+                                        <a class="custom-btn custom-btn--medium custom-btn--style-2 wide" href="{{ route('auth.register.form') }}">Get Started</a>
                                     </div>
                                 </div>
                                 <!-- end item -->
@@ -769,7 +769,7 @@ of trading tools. Our robots have been developed with the latest market and trad
                                         <!-- start item -->
                                         <div class="col col--lg-4 col--xl-3">
                                             <div class="__item">
-                                                <p>1010 Avenue of the Moon New York, NY 10018 US.</p>
+                                                
                                             </div>
                                         </div>
                                         <!-- end item -->
@@ -777,7 +777,8 @@ of trading tools. Our robots have been developed with the latest market and trad
                                         <!-- start item -->
                                         <div class="col col--sm-6 col--lg-4 col--xl-3">
                                             <div class="__item">
-                                                <p>Call Us: <a href="tel:+70000000000">(066) 052 39876</a></p>
+                                                <p> <a href="mailto:admin@cryptvault.trade">admin@cryptvault.trade</a></p>
+                                                
                                             </div>
                                         </div>
                                         <!-- end item -->
@@ -785,7 +786,7 @@ of trading tools. Our robots have been developed with the latest market and trad
                                         <!-- start item -->
                                         <div class="col col--sm-6 col--lg-4 col--xl-3">
                                             <div class="__item">
-                                                <p>Email: <a href="mailto:info@mycryptvault.com">info@mycryptvault.com</a></p>
+                                                
                                             </div>
                                         </div>
                                         <!-- end item -->

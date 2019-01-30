@@ -100,8 +100,6 @@ class AdminController extends Controller
             'earnings' => 'required',
             'owing' => 'required',
             'status' => 'required', 
-            'dollars' => 'required',
-
             ]);
 
         //grab variables
@@ -118,7 +116,7 @@ class AdminController extends Controller
 
         //dd($account);
 
-        $amont = (float) $account->balance;
+        $amont = (float) $account->dollars;
 
         $amonti = (float) request('amount');
 
@@ -126,20 +124,19 @@ class AdminController extends Controller
 
         $eari = (float) request('earnings');
 
-        $doll = (float) $account->dollars;
-
-        $dolli = (float) request('dollars');
+       
                         
         $newAmount = $amont + $amonti;
 
         $newEarn = $ear + $eari;
 
-        $newDoll = $doll + $dolli;
-
-        $account->balance = $newAmount;
-        $account->earnings = $newEarn;
-        $account->dollars = $newDoll;
         
+
+        //$account->balance = $newAmount;
+        $account->earnings = $newEarn;
+        $account->dollars = $newAmount;
+        
+        //dd($account);
 
 
         
@@ -207,9 +204,9 @@ class AdminController extends Controller
         $account = Account::where('id', $acc_id)->firstOrFail();
 
         
-        $account->balance = request('amount');
+        $account->dollars = request('amount');
         $account->earnings = request('earnings');
-        $account->dollars = request('dollars');
+        //$account->dollars = request('dollars');
         
 
         

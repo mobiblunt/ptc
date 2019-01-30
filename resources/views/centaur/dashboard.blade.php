@@ -117,8 +117,35 @@
 </div>
                     @else
 
+                    @if($acct->owing > 0)
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-sm-6">
+                             <div class="alert alert-warning">
+                                        <button type="button" aria-hidden="true" class="close">×</button>
+                                        <span><b> Notice - </b> You have not completed payments for your investment plan.</span>
+                                    </div>
+                            
+                        </div>
+                    </div>
+
+                    @endif
+
+                    @if($dat >= $acct->end_date)
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-sm-6">
+                             <div class="alert alert-danger">
+                                        <button type="button" aria-hidden="true" class="close">×</button>
+                                        <span><b> Notice - </b> Your trading period has ended, please subscribe to a new plan.</span>
+                                    </div>
+                            
+                        </div>
+                    </div>
+                    @endif
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
+                           
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="orange">
                                     <i class="material-icons">content_copy</i>
@@ -156,8 +183,8 @@
                                     <i class="material-icons">info_outline</i>
                                 </div>
                                 <div class="card-content">
-                                    <p class="category">Investment</p>
-                                    <h3 class="title">{{$acct->balance}} <i class="fa fa-btc"></i></h3>
+                                    <p class="category">Investment</p> 
+                                    <h3 class="title">{{$plan1->minimum}} <i class="fa fa-btc"></i></h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
@@ -174,7 +201,7 @@
                                 </div>
                                 <div class="card-content">
                                     <p class="category">Earnings</p>
-                                    <h3 class="title">{{$acct->earnings}} <i class="fa fa-btc"></i></h3>
+                                    <h3 class="title">$ {{$acct->earnings}}</h3>
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">

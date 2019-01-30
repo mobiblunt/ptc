@@ -18,8 +18,8 @@
 	                                    <div class="row">
 	                                        <div class="col-md-5">
 												<div class="form-group label-floating">
-													<label class="control-label">Amount(Min: 1 BTC for Silver and 100 BTC for Sapphire):</label>
-													<input type="number" id="investment" min="1" name="amount" maxlength="10" class="form-control" required>
+													<label class="control-label">Amount(Minimum Of $500):</label>
+													<input type="number" step="0.01" id="investment" min="500" name="amount" maxlength="10" class="form-control" required>
 												</div>
 	                                        </div>
 	                                        <div class="col-md-3">
@@ -47,7 +47,7 @@
 	                                        
 	                                        <div class="col-md-6">
 												<div class="form-group">
-													<label class="control-label">Total[BTC]</label>
+													<label class="control-label">Total</label>
 													<input type="text" readonly="" id="total" class="form-control" >
 												</div>
 	                                        </div>

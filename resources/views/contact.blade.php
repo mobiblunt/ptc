@@ -46,15 +46,7 @@
                           <img class="img-responsive lazy" src="img/blank.gif" data-src="img/ico/ico_phone.png" width="24" height="44" alt="demo" />
                         </i>
 
-                        <div>
-                          <h4 class="__title h5">Phone Numbers</h4>
-
-                          <span>
-                            <a href="tel:+14815162342">+1 481 516 2342</a>
-                            <br>
-                            <a href="tel:+14815162342">+1 481 516 2342</a>
-                          </span>
-                        </div>
+                        
                       </div>
                     </div>
                     <!-- end item -->
@@ -66,15 +58,7 @@
                           <img class="img-responsive lazy" src="img/blank.gif" data-src="img/ico/ico_marker.png" width="32" height="44" alt="demo" />
                         </i>
 
-                        <div>
-                          <h4 class="__title h5">Location</h4>
-
-                          <span>
-                            1010 Avenue of the Moon
-                            <br>
-                            New York, NY 10018 US.
-                          </span>
-                        </div>
+                        
                       </div>
                     </div>
                     <!-- end item -->
@@ -90,7 +74,7 @@
                           <h4 class="__title h5">Email</h4>
 
                           <span>
-                            <a href="mailto:hello@mycryptvault.com">hello@mycryptvault.com</a>
+                            <a href="mailto:admin@cryptvault.trade">admin@cryptvault.trade</a>
                           </span>
                         </div>
                       </div>

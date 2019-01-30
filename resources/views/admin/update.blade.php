@@ -18,8 +18,8 @@
 	                                    <div class="row">
 	                                        <div class="col-md-5">
 												<div class="form-group label-floating">
-													<label class="control-label">Balance:</label>
-													<input type="number" value="{{ $depo->amount }}" name="amount" class="form-control">
+													<label class="control-label">Amount:</label>
+													<input type="number" step="0.01" value="{{ $depo->amount }}" name="amount" class="form-control">
 												</div>
 	                                        </div>
 	                                        <div class="col-md-3">
@@ -32,7 +32,7 @@
 	                                        <div class="col-md-4">
 												<div class="form-group label-floating">
 													<label class="control-label">Owing</label>
-													<input type="number" name="owing" class="form-control" required>
+													<input type="number" step="any" name="owing" class="form-control" required>
 												</div>
 	                                        </div>
 	                                    </div>
@@ -50,15 +50,7 @@
 												</div>
 											</div>
 
-										<div class="col-md-4">
-												<div class="form-group">
-													<label class="control-label">Dollars</label>
-													<input type="number" step="0.01" name="dollars" class="form-control">
-														
-														
-												</div>
-
-	                                        </div>
+										
 	                                        
 	                                        
 	                                    </div>

@@ -15,6 +15,8 @@ use App\User;
 use App\Plan;
 use App\Account;
 
+use Carbon\Carbon;
+
 class RegistrationController extends Controller
 {
     /** @var Centaur\AuthManager */
@@ -91,7 +93,6 @@ class RegistrationController extends Controller
             'address' => $request->get('address'),
             'mobile' => $request->get('mobile'),
             'country' => $request->get('country'),
-            'plan_id' => $request->get('plan_id'),
             'ref' => $request->get('ref'),
             'u_id' => $rand,
         ];
@@ -108,12 +109,33 @@ class RegistrationController extends Controller
 
         }
 
+        $currentdate = Carbon::now();
+
+        if ($request->get('plan_id') == "1") {
+
+
+           $duration = $currentdate->addDays(21)->toDateString();
+           
+        }
+        elseif ($request->get('plan_id') == "4" || $request->get('plan_id') == "5") {
+            $duration = $currentdate->addDays(30)->toDateString();
+        }
+        else {
+            $duration = $currentdate->addDays(100)->toDateString();
+        }
+
+
+        //dd($duration);
+        
+
         $account = Account::create([
             'user_id' => $result->user->id,
+            'plan_id' => $request->get('plan_id'),
             'balance' => 0,
             'owing' => 0,
             'earnings' => 0,
-            'dollars' => 0
+            'dollars' => 0,
+            'end_date' => $duration
             ]);
 
         

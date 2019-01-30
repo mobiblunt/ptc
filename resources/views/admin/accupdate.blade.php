@@ -19,7 +19,7 @@
 	                                        <div class="col-md-5">
 												<div class="form-group label-floating">
 													<label class="control-label">Balance:</label>
-													<input type="number" value="{{ $acc->balance }}" name="amount" class="form-control">
+													<input type="number" value="{{ $acc->dollars }}" step="any" name="amount" class="form-control">
 												</div>
 	                                        </div>
 	                                        <div class="col-md-3">
@@ -32,21 +32,7 @@
 	                                        
 	                                    </div>
 
-	                                    <div class="row">
-	                                        
-
-										<div class="col-md-4">
-												<div class="form-group">
-													<label class="control-label">Dollars</label>
-													<input type="number" value="{{ $acc->dollars }}" step="0.01" name="dollars" class="form-control">
-														
-														
-												</div>
-
-	                                        </div>
-	                                        
-	                                        
-	                                    </div>
+	                                    
 
 	                                    <input name="_token" value="{{ csrf_token() }}" type="hidden">
 

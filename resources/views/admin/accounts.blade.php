@@ -18,18 +18,16 @@
                             
                             
                                 <h4>{{ $acc->user->first_name }}</h4>
-                                <h4>Balance: {{ $acc->balance }} BTC</h4>
-                                <h4>Earnings: {{ $acc->earnings }}btc</h4>
+                                 <h4>{{ $acc->plan->name }} </h4>
+                                <h4>Balance: $ {{ $acc->dollars }} </h4>
+                                <h4>Earnings: $ {{ $acc->earnings }}</h4>
+                                <h4>Owing: $ {{ $acc->owing }}</h4>
+                                <h4>Expiry: {{ $acc->end_date }}</h4>
                                 
                             
                         </div>
                         <ul class="list-group">
-                            <li class="list-group-item">
                             
-                                <em>Dollars:$ {{ $acc->dollars }} </em><br>
-                                
-                            
-                            </li>
                         </ul>
                         <div class="panel-footer">
                             <a href="{{ route('account.update', $acc->id) }}" class="btn btn-default">
