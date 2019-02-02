@@ -138,12 +138,14 @@ class AdminController extends Controller
         
         //dd($account);
 
+        $account->owing = request('owing');
+
 
         
 
         $account->save();
 
-        $deposit->owing = request('owing');
+        
 
         $deposit->status = request('status');
 
@@ -206,7 +208,7 @@ class AdminController extends Controller
         
         $account->dollars = request('amount');
         $account->earnings = request('earnings');
-        //$account->dollars = request('dollars');
+        $account->owing = request('owing');
         
 
         

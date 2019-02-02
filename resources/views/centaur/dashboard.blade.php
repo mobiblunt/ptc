@@ -212,6 +212,48 @@
                         </div>
                     </div>
 
+                    <div class="card">
+                        <div class="card-header" data-background-color="blue">
+                            <h3 class="title"> Buy Bitcoin</h3>
+                        </div>
+
+
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <a target="_blank" href="https://localbitcoins.com/"><img src="{{ url('/') }}/img/lbc.png"></a>
+
+                               
+                                
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <a target="_blank" href="https://coinmama.com/"><img src="{{ url('/') }}/img/cm.png"></a>
+
+
+                             
+
+                         </div>
+                         <div class="col-lg-1"></div>
+
+                             <div class="col-lg-3 col-md-6 col-sm-6">
+
+                                <a target="_blank" href="https://coinbase.com/"><img src="{{ url('/') }}/img/cb.png"></a>
+                                
+                            </div>
+                        </div>
+
+                        
+                        
+                        
+
+                    </div>
+                </div>
+            </div>
+
+
+
                     <div class="row">
                         <div class="col-md-4">
                             <script type="text/javascript">

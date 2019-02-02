@@ -9,6 +9,8 @@ use Uuid;
 use App\Deposit; 
 use App\Plan;
 use App\Alert;
+use App\Account; 
+use Carbon\Carbon;
 
 class DepositController extends Controller
 {
@@ -151,9 +153,41 @@ class DepositController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+
+
+       $acc_id = $request->input('acc'); 
+       
+       $account = Account::find($acc_id);
+
+
+        $currentdate = Carbon::now();
+
+        if ($request->get('plan_id') == "1") {
+
+
+           $duration = $currentdate->addDays(21)->toDateString();
+           
+        }
+        elseif ($request->get('plan_id') == "4" || $request->get('plan_id') == "5") {
+            $duration = $currentdate->addDays(30)->toDateString();
+        }
+        else {
+            $duration = $currentdate->addDays(100)->toDateString();
+        }
+
+
+    
+
+       $account->plan_id = $request->input('plan'); 
+
+       $account->end_date = $duration; 
+
+        $account->save();
+
+
+         return redirect('userwallet')->with('status', 'Plan Has Been Succesfully Subscribed');
     }
 
     /**

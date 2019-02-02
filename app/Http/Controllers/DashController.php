@@ -75,9 +75,10 @@ class DashController extends Controller
 
         //$plans = Plan::all();
 
-        $user = Sentinel::getUser()->plan_id;
+         $acct = Account::where('user_id', Sentinel::getUser()->id)->first();
 
-        $plan1 = Plan::where('id', $user)->first();
+        $plan1 = Plan::where('id', $acct->plan_id)->first();
+
 
         //dd($user);
 
@@ -98,6 +99,9 @@ class DashController extends Controller
     public function getWallet() {
 
 
+        $plans = Plan::all();
+
+
         $user = Sentinel::getUser()->plan_id;
 
         $acct = Account::where('user_id', Sentinel::getUser()->id)->first();
@@ -111,7 +115,7 @@ class DashController extends Controller
 
         
 
-        return view('home.wallet' , compact('plan1','acct','dat'));
+        return view('home.wallet' , compact('plan1','acct','dat','plans'));
 
 
     }

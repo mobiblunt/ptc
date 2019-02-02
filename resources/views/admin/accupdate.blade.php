@@ -29,6 +29,14 @@
 													
 												</div>
 	                                        </div>
+
+	                                        <div class="col-md-3">
+												<div class="form-group label-floating">
+													<label class="control-label">Owing</label>
+													<input type="number" value="{{ $acc->owing }}" step="any"  name="owing" class="form-control">
+													
+												</div>
+	                                        </div>
 	                                        
 	                                    </div>
 

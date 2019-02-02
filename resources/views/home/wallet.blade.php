@@ -116,6 +116,59 @@
                         </div>
                     </div>
                 </div>
+                @if($dat >= $acct->end_date)
+
+
+                 <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header" data-background-color="blue">
+                                    <h4 class="title">Subscribe To Plan</h4>
+                                </div>
+                                <div class="card-content">
+                                    <form accept-charset="UTF-8" role="form" method="post" action="{{ route('update.plan') }}">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <label class="control-label">Plan:</label>
+                                                    <select class="form-control" name="plan" required>
+                                                        <option value="">Select Plan</option>
+                                                         @foreach ($plans as $plan)
+                                                        <option value="{{ $plan->id }}">{{ $plan->name }}</option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                           
+                                        </div>
+
+                                       <input name="_token" value="{{ csrf_token() }}" type="hidden">
+
+                                       <input name="acc" value="{{ $acct->id }}" type="hidden">
+
+
+                                        <button type="submit" class="btn btn-primary pull-right">Subcribe</button>
+                                        <div class="clearfix"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+
+
+
+                @endif
+
+
+
+
+
+
             </div>
              </div>
 

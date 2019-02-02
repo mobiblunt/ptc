@@ -117,3 +117,5 @@ Route::post('acc-store', ['as' => 'acc.store','uses' => 'AdminController@accStor
 Route::delete('del-acc/{account}', ['as' => 'del.acc','uses' => 'AdminController@dellAcc']);
 
 Route::post('sendalert', 'DepositController@alert')->name('alert.send');
+
+Route::post('updateplan', 'DepositController@update')->name('update.plan');
